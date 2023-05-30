@@ -1,0 +1,9 @@
+dotnet new console -o MeuApp
+dotnet restore
+dotnet build
+dotnet clean
+dotnet run
+dotnet run --environment=Development
+
+Ctrl + k + c : Comenta Linhas
+Ctrl + k + u : Descomenta Linhas
