@@ -30,6 +30,20 @@ namespace TextEditor
 
         static void Open()
         {
+            Console.Clear();
+            Console.WriteLine("Where the file is located ?");
+            Console.WriteLine("---------------------------");
+            string path = Console.ReadLine();
+
+            using (var file = new StreamReader(path))
+            {
+                string text = file.ReadToEnd();
+                Console.WriteLine(text);
+            }
+
+            Console.WriteLine("");
+            Console.Read();
+            Menu();
 
         }
 

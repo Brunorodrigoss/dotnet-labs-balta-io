@@ -9,5 +9,4 @@ RUN yum -y update && \
     ls && \
     bash ./dotnet-install.sh --channel 7.0 
 
-RUN export DOTNET_ROOT=$HOME/.dotnet && \
-    export PATH=$PATH:$HOME/.dotnet:$HOME/.dotnet/tools
+ENV PATH="$PATH:/root/.dotnet:/root/.dotnet/tools"
